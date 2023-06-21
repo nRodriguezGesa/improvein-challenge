@@ -1,0 +1,17 @@
+export enum genre {
+  ACTION = 'Action',
+  ADVENTURE = 'Adventure',
+  COMEDY = 'Comedy',
+  DRAMA = 'Drama',
+  FANTASY = 'Fantasy',
+  HORROR = 'Horror',
+  ROMANCE = 'Romance',
+  SCIFI = 'Sci-Fi',
+  THRILLER = 'Thriller',
+  ANIMATION = 'Animation',
+  DOCUMENTARY = 'Documentary',
+  CRIME = 'Crime',
+  MYSTERY = 'Mystery',
+  FAMILY = 'Family',
+  SUPERHERO = 'Superhero',
+}
