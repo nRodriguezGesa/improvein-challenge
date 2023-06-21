@@ -27,7 +27,7 @@ export class AuthService {
 
   async login(inputUserDto: InputUserDto): Promise<AuthResponse> {
     const user: User = await this.userRepository.findUser(inputUserDto);
-    if (user == null) {
+    if (user === null) {
       throw new BaseExceptionResponse(HttpStatus.NOT_FOUND, 'Mail not found');
     }
     if (

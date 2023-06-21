@@ -30,12 +30,12 @@ export class DirectorsRepository {
 
   async getDirectorById(id: number): Promise<Director> {
     try {
-      return await this.directorRepository.findOneBy({ id: id });
+      return await this.directorRepository.findOneByOrFail({ id: id });
     } catch (error) {
       let errorMessage: string;
       let status: number;
       if (error instanceof EntityNotFoundError) {
-        errorMessage = `Driector not found: ${error}`;
+        errorMessage = `Director not found: ${error}`;
         status = HttpStatus.NOT_FOUND;
         throw new BaseExceptionResponse(HttpStatus.NOT_FOUND, errorMessage);
       } else {

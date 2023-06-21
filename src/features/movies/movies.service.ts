@@ -34,12 +34,6 @@ export class MoviesService {
     const director: Director = await this.directorsService.getDirectorById(
       movie.directorId,
     );
-    if (!director) {
-      throw new BaseExceptionResponse(
-        HttpStatus.BAD_REQUEST,
-        'Error finding director',
-      );
-    }
     const newMovie: BaseMovie = BaseMovie.createBaseMovieFromCreateMovieDto(
       movie,
       director,

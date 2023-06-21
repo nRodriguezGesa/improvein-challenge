@@ -3,5 +3,5 @@ export enum ApiTagsEnum {
   DIRECTORS = 'Directors',
   ACTORS = 'Actors',
   SHOWS = 'Tv-Shows',
-  LOGIN = 'LOGIN',
+  LOGIN = 'Login',
 }

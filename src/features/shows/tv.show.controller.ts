@@ -57,7 +57,7 @@ export class TvShowsController {
   @ApiBearerAuth('access-token')
   @ApiTags(ApiTagsEnum.SHOWS)
   @UseGuards(AuthGuard)
-  @Get('episode/:id')
+  @Get('episodes/:id')
   async getTvShowById(
     @Headers() headers,
     @Param('id') id: number,
