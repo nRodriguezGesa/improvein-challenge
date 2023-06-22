@@ -11,7 +11,7 @@ docker-compose up
 2 - Ejecutar migrations de las bases de datos en el contenedor de NestJS debido a que no hay endpoints de creacion para todas las entidades
 
 ```
-docker exec -it movies-challenge-nestjs-1 npm run migration:up
+docker exec -it movies-challenge-nestjs-1 npm run migrate:up
 ```
 
 ## Probar el proyecto
